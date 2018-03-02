@@ -7,7 +7,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class IndexPageController {
 
-    @RequestMapping("/")
+    private static final String HEAD_URL = "/";
+    private static final String CONTACTS_URL = "/contacts";
+
+
+    @RequestMapping(HEAD_URL)
     public String index() {
         return "index";
     }
@@ -21,4 +25,12 @@ public class IndexPageController {
     public String calc() {
         return "calculator";
     }
+
+    @RequestMapping(value = CONTACTS_URL, method = RequestMethod.GET)
+    public String contacts() {
+        return "contacts";
+    }
+
+
+
 }
