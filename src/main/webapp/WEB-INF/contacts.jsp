@@ -9,13 +9,16 @@
 <html>
 <head>
     <title>Title</title>
-    <script type="text/javascript"><%@include file="js/contacts.js"%></script>
+    <script type="text/javascript">
+        <%@include file="js/lib/jquery-3.3.1.min.js"%>
+        <%@include file="js/contacts.js"%>
+    </script>
 </head>
-<body onload="getContacts()">
+<body onload="getContacts">
 
     <fieldset>
         <legend>Добавить новый контакт</legend>
-        <form action="/new_contact" method="post">
+        <form   onsubmit="return createContact(event)">
             <p>Имя</p><input type="text" id="name" name="name">
             <p>Фамилия</p><input type="text" id="surname" name="surname">
             <p>Почта</p><input type="text" id="email" name="email">

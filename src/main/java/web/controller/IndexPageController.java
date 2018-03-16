@@ -31,6 +31,10 @@ public class IndexPageController {
         return "contacts";
     }
 
+    @RequestMapping(value = "/new_jsp")
+    public String newjsp(){
+        return "NewJSP";
+    }
 
 
 }

@@ -1,0 +1,44 @@
+/*Оформление по классу*/
+.div_left{
+    width: 50%;
+    float: left;
+}
+
+.div_right{
+    width: 50%;
+    float: right;
+}
+
+#right{
+    width: 30%;
+    float: left;
+}
+
+#left{
+    width: 70%;
+    float: right;
+}
+#lemon{
+    background: yellow;
+    fill: yellow;
+    border:  solid yellow;
+    width: 150px;
+    height: 150px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 100px;
+
+}
+
+
+
+fieldset {
+    border: 5px solid darkgreen;
+    border-radius: 15px;
+
+}
+
+#p_id{
+    color: gray;
+}

@@ -54,6 +54,7 @@
     <a href="/dash" methods="get">Переход на dashboard.jsp</a>
     <a href="/calc" methods="get">Переход на calculator.jsp</a>
     <a href="/contacts" methods="get">Переход на contacts.jsp</a>
-
+    <a href="/new_jsp" methods="get">Переход на NewJSP.jsp</a>
+    <a href="/customer" methods="get">Переход на Customer.jsp</a>
 </body>
 </html>
